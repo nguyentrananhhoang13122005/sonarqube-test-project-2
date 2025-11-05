@@ -27,3 +27,10 @@ def new_buggy_function():
 def new_feature_with_bug():
     return "This is a new feature"
     print("This line is unreachable and is a bug")
+    # A developer tries to push a new bug directly to main
+def create_user_profile():
+    return {
+        "name": "Hoang",
+        "role": "Developer",
+        "name": "Hoang Tran" # Bug: Duplicate key 'name' in dictionary
+    }
