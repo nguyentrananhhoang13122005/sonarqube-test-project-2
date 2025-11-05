@@ -23,3 +23,7 @@ buggy_function("test")  # Pass string, but bugs are in logic
 def new_buggy_function():
     return "This is a bug"
     print("This line will never be reached") # Unreachable code
+def another_buggy_function():
+    # This function has an unreachable line
+    return "This is another bug"
+    print("SonarCloud should detect this unreachable code")
