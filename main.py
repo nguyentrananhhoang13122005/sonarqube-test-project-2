@@ -20,4 +20,6 @@ def buggy_function(param):
 
 # Call the function to trigger
 buggy_function("test")  # Pass string, but bugs are in logic
-print(1 / 0) # This is a new bug to fail the Quality Gate
+def new_buggy_function():
+    return "This is a bug"
+    print("This line will never be reached") # Unreachable code
