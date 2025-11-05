@@ -27,3 +27,8 @@ def new_buggy_function():
 def new_feature_with_bug():
     return "This is a new feature"
     print("This line is unreachable and is a bug")
+    # A developer tries to push a serious bug directly to main
+def function_with_unreachable_code():
+    return "This will cause a Quality Gate failure"
+    print("This line is a real bug according to SonarCloud")
+
