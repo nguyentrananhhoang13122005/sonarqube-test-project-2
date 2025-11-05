@@ -23,3 +23,7 @@ buggy_function("test")  # Pass string, but bugs are in logic
 def new_buggy_function():
     return "This is a bug"
     print("This line will never be reached") # Unreachable code
+    # A developer hastily adds a new feature with a bug
+def new_feature_with_bug():
+    return "This is a new feature"
+    print("This line is unreachable and is a bug")
